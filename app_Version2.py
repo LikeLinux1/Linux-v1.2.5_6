@@ -4,10 +4,10 @@ from flask import Flask, render_template_string
 app = Flask(__name__)
 
 themes = [
-    {"title": "Добро пожаловать!", "desc": "Это ваш новый сайт в стиле 90-х!"},
-    {"title": "Гостевая книга", "desc": "Оставьте свой комментарий ниже."},
-    {"title": "Домашняя страница", "desc": "Вы нашли самую олдскульную страницу!"},
-    {"title": "Старый блог", "desc": "Этот блог написан в стиле Windows 98."},
+    {"title": "Welcome!", "desc": "This is your new 90s-style website!"},
+    {"title": "Guestbook", "desc": "Leave your comment below."},
+    {"title": "Homepage", "desc": "You've found the most oldschool page!"},
+    {"title": "Old Blog", "desc": "This blog is written in Windows 98 style."},
 ]
 
 backgrounds = [
@@ -89,11 +89,11 @@ def index():
     </head>
     <body>
         <div class="container">
-            <div class="marquee"><span class="blink">Сайт сгенерирован автоматически!</span></div>
+            <div class="marquee"><span class="blink">This site was generated automatically!</span></div>
             <h1>{theme['title']}</h1>
             <p>{theme['desc']}</p>
             <img src="https://www.gifgratis.net/archivos/old_computer.gif" width="120" alt="Oldschool Computer"/>
-            <footer>Copyright © 1999-{2025} | Сайт-рандомайзер</footer>
+            <footer>Copyright © 1999-{2025} | Random Site Generator</footer>
         </div>
     </body>
     </html>
